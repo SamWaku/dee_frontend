@@ -33,14 +33,8 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="bg-[#f6efe2] text-[#514a3c] p-4 shadow-md relative">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link href="/">
-            <span className="text-xl font-bold cursor-pointer text-red-500">
-              Brand
-            </span>
-          </Link>
-
+      <nav className="bg-[#f6efe2] text-[#514a3c] p-4 ">
+        <div className=" mx-auto flex justify-between items-center md:py-8">
           {/* Mobile Menu Button */}
           <button
             className="md:hidden z-50 text-gray-700 hover:text-gray-900"
@@ -65,7 +59,7 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
         )}
       </nav>
 
-      <main className="flex-1 container mx-auto p-4">{children}</main>
+      <main className=" py-8">{children}</main>
     </div>
   );
 }
