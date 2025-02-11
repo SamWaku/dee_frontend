@@ -12,10 +12,10 @@ export default function Home() {
         </div>
 
         <div className=" bg-white min-h-screen ">
-          <Specials />
-        </div>
-        <div className=" min-h-screen">
           <Services />
+        </div>
+        <div className="  min-h-screen ">
+          <Specials />
         </div>
       </main>{" "}
     </div>
