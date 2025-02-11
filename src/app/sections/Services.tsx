@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { MoveRight } from "lucide-react";
 
 export default function Services() {
   return (
@@ -28,7 +29,7 @@ export default function Services() {
         </div>
       </div>
       <div className=" flex md:grid md:grid-cols-3 md:items-center">
-        <div className=" relative">
+        <div className=" relative ">
           <div className=" -rotate-45 absolute md:top">
             <p>Lillies </p>
           </div>
@@ -42,6 +43,14 @@ export default function Services() {
               height={40}
               priority
             />
+          </div>
+          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
+            <div>
+              <p className=" uppercase">Shop Now </p>
+            </div>
+            <div>
+              <MoveRight width={15} />
+            </div>
           </div>
         </div>
         <div className=" relative">
@@ -58,6 +67,14 @@ export default function Services() {
               priority
             />
           </div>
+          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
+            <div>
+              <p className=" uppercase">Shop Now </p>
+            </div>
+            <div>
+              <MoveRight width={15} />
+            </div>
+          </div>
         </div>
         <div className=" relative">
           <div className=" -rotate-45 absolute md:top">
@@ -72,6 +89,14 @@ export default function Services() {
               height={40}
               priority
             />
+          </div>
+          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
+            <div>
+              <p className=" uppercase">Shop Now </p>
+            </div>
+            <div>
+              <MoveRight width={15} />
+            </div>
           </div>
         </div>
       </div>
