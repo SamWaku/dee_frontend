@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className=" md:flex space-x-28">
+      <div className=" md:flex xl:space-x-28 md:space-x-20">
         {/* Image */}
         <div>
           <Image
@@ -40,7 +40,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className=" absolute md:right-60 md:top-60 md:space-y-6">
+        <div className=" absolute xl:right-60 md:right-32 md:top-60 md:space-y-6">
           <div className=" md:flex md:gap-2 text-left items-center">
             <div className=" border bg-white md:p-2 shadow-lg">
               <Flower2 className=" text-[#524d41]" />

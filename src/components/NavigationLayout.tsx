@@ -33,7 +33,7 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="bg-[#f6efe2] text-[#514a3c] p-4 ">
+      <nav className="bg-[#f6efe2] text-[#514a3c] md:py-4">
         <div className=" mx-auto flex justify-between items-center md:py-8">
           {/* Mobile Menu Button */}
           <button
