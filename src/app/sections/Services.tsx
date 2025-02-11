@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="   md:mx-12 md:py-20">
+    <div className="   md:mx-12 md:py-10 md:space-y-10">
       <div className=" text-[#524d41] md:grid md:grid-cols-2">
         <div className=" md:space-y-2">
           <p className=" uppercase">Type of Bouquet</p>
@@ -24,6 +25,38 @@ export default function Services() {
             </p>
             <div></div>
           </div>
+        </div>
+      </div>
+      <div className=" flex md:grid md:grid-cols-3">
+        <div>
+          <Image
+            className=" rounded-t-full"
+            src="/assets/edited/Bouqeut1.png" // Move logo to public folder
+            alt="Bouquet"
+            width={320}
+            height={40}
+            priority
+          />
+        </div>
+        <div>
+          <Image
+            className=" rounded-t-full"
+            src="/assets/edited/Bouqeut2.png" // Move logo to public folder
+            alt="Bouquet"
+            width={320}
+            height={40}
+            priority
+          />
+        </div>
+        <div>
+          <Image
+            className=" rounded-t-full"
+            src="/assets/edited/Bouqeut3.png" // Move logo to public folder
+            alt="Bouquet"
+            width={320}
+            height={40}
+            priority
+          />
         </div>
       </div>
     </div>
