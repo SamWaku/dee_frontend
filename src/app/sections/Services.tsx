@@ -27,36 +27,52 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className=" flex md:grid md:grid-cols-3">
-        <div>
-          <Image
-            className=" rounded-t-full"
-            src="/assets/edited/Bouqeut1.png" // Move logo to public folder
-            alt="Bouquet"
-            width={320}
-            height={40}
-            priority
-          />
+      <div className=" flex md:grid md:grid-cols-3 md:items-center">
+        <div className=" relative">
+          <div className=" -rotate-45 absolute md:top">
+            <p>Lillies </p>
+          </div>
+          <div>
+            {" "}
+            <Image
+              className=" rounded-t-full"
+              src="/assets/edited/Bouqeut1.png" // Move logo to public folder
+              alt="Bouquet"
+              width={320}
+              height={40}
+              priority
+            />
+          </div>
         </div>
-        <div>
-          <Image
-            className=" rounded-t-full"
-            src="/assets/edited/Bouqeut2.png" // Move logo to public folder
-            alt="Bouquet"
-            width={320}
-            height={40}
-            priority
-          />
+        <div className=" relative">
+          <div className=" -rotate-45 absolute md:top">
+            <p>Lillies </p>
+          </div>
+          <div>
+            <Image
+              className=" rounded-t-full"
+              src="/assets/edited/Bouqeut2.png" // Move logo to public folder
+              alt="Bouquet"
+              width={320}
+              height={40}
+              priority
+            />
+          </div>
         </div>
-        <div>
-          <Image
-            className=" rounded-t-full"
-            src="/assets/edited/Bouqeut3.png" // Move logo to public folder
-            alt="Bouquet"
-            width={320}
-            height={40}
-            priority
-          />
+        <div className=" relative">
+          <div className=" -rotate-45 absolute md:top">
+            <p>Lillies </p>
+          </div>
+          <div>
+            <Image
+              className=" rounded-t-full"
+              src="/assets/edited/Bouqeut3.png" // Move logo to public folder
+              alt="Bouquet"
+              width={320}
+              height={40}
+              priority
+            />
+          </div>
         </div>
       </div>
     </div>
