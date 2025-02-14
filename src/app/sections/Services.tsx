@@ -1,103 +1,106 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 
+const images = [
+  "/assets/edited/Bouqeut1.png",
+  "/assets/edited/Bouqeut2.png",
+  "/assets/edited/Bouqeut3.png",
+  // "/assets/edited/Bouqeut4.png", // Add more images if needed
+];
+
 export default function Services() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollToIndex = (index: number) => {
+    if (scrollRef.current) {
+      const scrollAmount = index * scrollRef.current.clientWidth;
+      scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
+      setCurrentIndex(index);
+    }
+  };
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const index = Math.round(
+        scrollRef.current.scrollLeft / scrollRef.current.clientWidth
+      );
+      setCurrentIndex(index);
+    }
+  };
+
   return (
-    <div className="   md:mx-12 md:py-10 md:space-y-10">
-      <div className=" text-[#524d41] md:grid md:grid-cols-2">
-        <div className=" md:space-y-2">
-          <p className=" uppercase">Type of Bouquet</p>
-          <p className=" md:text-4xl md:font-semibold">
+    <div className="md:mx-12 md:py-10 md:space-y-10">
+      {/* Header Section */}
+      <div className="text-[#524d41] md:grid md:grid-cols-2">
+        <div className="md:space-y-2">
+          <p className="uppercase">Type of Bouquet</p>
+          <p className="md:text-4xl md:font-semibold">
             Find your perfect <br />
             flower bouquet
           </p>
         </div>
         <div className="md:flex-row md:space-y-6">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              libero debitis, harum eos ad dolor dolores eum dolore nemo saepe.
-            </p>
-          </div>
-          <div className=" md:grid md:grid-cols-2">
-            <p className=" text-center items-center border md:p-2 bg-[#504d43] text-white font-light">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            libero debitis, harum eos ad dolor dolores eum dolore nemo saepe.
+          </p>
+          <div className="md:grid md:grid-cols-2">
+            <button className="text-center border md:p-2 bg-[#504d43] text-white font-light">
               Show All
-            </p>
-            <div></div>
+            </button>
           </div>
         </div>
       </div>
-      <div className=" flex md:grid md:grid-cols-3 md:items-center">
-        <div className=" relative ">
-          <div className=" -rotate-45 absolute md:top">
-            <p>Lillies </p>
-          </div>
-          <div>
-            {" "}
-            <Image
-              className=" rounded-t-full"
-              src="/assets/edited/Bouqeut1.png" // Move logo to public folder
-              alt="Bouquet"
-              width={320}
-              height={40}
-              priority
-            />
-          </div>
-          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
-            <div>
-              <p className=" uppercase">Shop Now </p>
+
+      {/* Scrollable Images */}
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          onScroll={handleScroll}
+          className="flex overflow-x-scroll scroll-smooth scrollbar-hide snap-x snap-mandatory"
+        >
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className="relative flex-shrink-0 w-full snap-center"
+            >
+              {/* Label */}
+              <div className="absolute top-4 left-4 bg-black text-white px-2 py-1 rounded">
+                <p>Bouquet {index + 1}</p>
+              </div>
+
+              {/* Image */}
+              <Image
+                className="rounded-t-full"
+                src={img}
+                alt={`Bouquet ${index + 1}`}
+                width={320}
+                height={400}
+                priority
+              />
+
+              {/* Shop Now Button */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center space-x-2">
+                <p className="uppercase">Shop Now</p>
+                <MoveRight width={15} />
+              </div>
             </div>
-            <div>
-              <MoveRight width={15} />
-            </div>
-          </div>
+          ))}
         </div>
-        <div className=" relative">
-          <div className=" -rotate-45 absolute md:top">
-            <p>Lillies </p>
-          </div>
-          <div>
-            <Image
-              className=" rounded-t-full"
-              src="/assets/edited/Bouqeut2.png" // Move logo to public folder
-              alt="Bouquet"
-              width={320}
-              height={40}
-              priority
+
+        {/* Scroll Dots */}
+        <div className="flex justify-center mt-4 space-x-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => scrollToIndex(index)}
+              className={`h-3 w-3 rounded-full transition-all ${
+                index === currentIndex ? "bg-[#504d43] w-6" : "bg-gray-300"
+              }`}
             />
-          </div>
-          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
-            <div>
-              <p className=" uppercase">Shop Now </p>
-            </div>
-            <div>
-              <MoveRight width={15} />
-            </div>
-          </div>
-        </div>
-        <div className=" relative">
-          <div className=" -rotate-45 absolute md:top">
-            <p>Lillies </p>
-          </div>
-          <div>
-            <Image
-              className=" rounded-t-full"
-              src="/assets/edited/Bouqeut3.png" // Move logo to public folder
-              alt="Bouquet"
-              width={320}
-              height={40}
-              priority
-            />
-          </div>
-          <div className=" md:pt-4 md:absolute md:left-28 md:grid md:grid-cols-2 md:gap-2">
-            <div>
-              <p className=" uppercase">Shop Now </p>
-            </div>
-            <div>
-              <MoveRight width={15} />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
