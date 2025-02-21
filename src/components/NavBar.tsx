@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { SearchInput } from "@/atoms/Search";
 
 type NavBarProps = {
   name: string | null; // Define the type for the name prop
@@ -39,7 +40,9 @@ const NavBar = () => {
               About Us
             </Link>
           </div>
-          <div className="md:pt-6">Search</div>
+          <div className="md:pt-6">
+            <SearchInput />
+          </div>
         </div>
       </nav>
     </div>
