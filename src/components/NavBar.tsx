@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className="xl:px-10 lg:px-10 fixed w-full bg-[#f6efe2]   justify-between z-10">
       <nav className="flex w-full py-10 justify-between">
         {/* Desktop Menu */}
-        <div className="text-[#514a3c] hidden md:flex xl:space-x-60 lg:space-x-40">
+        <div className="text-[#514a3c] hidden md:flex xl:space-x-60 lg:space-x-40 items-center">
           <div>
             <Image
               src="/Logo.png" // Move logo to public folder
@@ -41,7 +41,7 @@ const NavBar = () => {
               About Us
             </Link>
           </div>
-          <div className="md:pt-6">
+          <div className="">
             <SearchInput />
           </div>
         </div>

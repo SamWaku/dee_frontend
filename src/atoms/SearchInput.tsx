@@ -3,7 +3,7 @@
 import { useState, ChangeEvent, KeyboardEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Search } from "lucide-react";
+import { Search, ShoppingBag } from "lucide-react";
 
 export const SearchInput = () => {
   const router = useRouter();
@@ -25,21 +25,24 @@ export const SearchInput = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className="flex items-center gap-3 border-2 border-gray-400 px-4 py-2 bg-white shadow-md"
-    >
-      <Search className="text-gray-500" size={20} />
-      <input
-        type="text"
-        placeholder="Search..."
-        value={inputValue}
-        onChange={handleChange}
-        onKeyDown={handleKeyPress}
-        className=" bg-white outline-none w-full text-gray-800"
-      />
-    </motion.div>
+    <div className="absolute right-10 bg-white shadow-md rounded-lg p-4">
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="flex items-center gap-3 border-2 border-gray-300 px-4 rounded-full"
+      >
+        <Search className="text-[#514a3c]" size={22} />
+        <input
+          type="text"
+          placeholder="Search..."
+          value={inputValue}
+          onChange={handleChange}
+          onKeyDown={handleKeyPress}
+          className="w-full bg-white outline-none text-gray-800 "
+        />
+        <ShoppingBag className="text-[#514a3c]" size={22} />
+      </motion.div>
+    </div>
   );
 };
