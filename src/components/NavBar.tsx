@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { SearchInput } from "@/atoms/Search";
+
+import { SearchInput } from "@/atoms/SearchInput";
 
 type NavBarProps = {
   name: string | null; // Define the type for the name prop
@@ -13,7 +14,7 @@ const NavBar = () => {
     <div className="xl:px-10 lg:px-10 fixed w-full bg-[#f6efe2]   justify-between z-10">
       <nav className="flex w-full py-10 justify-between">
         {/* Desktop Menu */}
-        <div className="text-[#514a3c] hidden md:flex space-x-60">
+        <div className="text-[#514a3c] hidden md:flex xl:space-x-60 lg:space-x-40">
           <div>
             <Image
               src="/Logo.png" // Move logo to public folder
@@ -23,7 +24,7 @@ const NavBar = () => {
               priority
             />
           </div>
-          <div className=" md:flex md:gap-12 md:pt-6">
+          <div className=" md:flex lg:gap-12 md:gap-12 md:pt-6">
             <Link href="/" className="hover:underline">
               Home
             </Link>
