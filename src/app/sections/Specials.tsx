@@ -16,7 +16,7 @@ export default function Specials() {
           <Sparkle className=" md:absolute md:bottom-7" width={12} />
         </div>
       </div>
-      <div className=" md:grid md:grid-cols-3">
+      <div className=" md:grid md:grid-cols-3 md: gap-10">
         <div className=" md:grid md:grid-cols-1 md:gap-6">
           <div className="  rounded-r-full bg-white md:h-40"></div>
           <div className="  rounded-l-full bg-white md:h-40"></div>
