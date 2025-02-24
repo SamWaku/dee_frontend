@@ -30,7 +30,7 @@ export default function Services() {
       </div>
       <div className=" flex md:grid md:grid-cols-3 md:items-center">
         <div className=" relative ">
-          <div className=" -rotate-45 absolute md:top">
+          <div className=" -rotate-12 absolute md:top">
             <p>Lillies </p>
           </div>
           <div>
