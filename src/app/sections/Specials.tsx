@@ -18,13 +18,15 @@ export default function Specials() {
       </div>
       <div className=" md:grid md:grid-cols-3">
         <div className=" md:grid md:grid-cols-1 md:gap-6">
-          <div className=" border rounded-r-full bg-white md:h-40">1</div>
-          <div className=" border rounded-r-full bg-white">2</div>
+          <div className="  rounded-r-full bg-white md:h-40"></div>
+          <div className="  rounded-l-full bg-white md:h-40"></div>
         </div>
-        <div>3</div>
-        <div>
-          <div>4</div>
-          <div>5</div>
+        <div className=" md:gri">
+          <div className="  bg-white rounded-t-full md:h-full"></div>
+        </div>
+        <div className=" md:grid md:grid-cols-1 md:gap-6 md:w-80">
+          <div className="  rounded-l-full bg-white md:h-40"></div>
+          <div className="  rounded-r-full bg-white md:h-40"></div>
         </div>
       </div>
     </div>
