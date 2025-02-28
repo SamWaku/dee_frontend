@@ -4,9 +4,9 @@ import { Flower2, Sparkles, Star, MoveUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className=" flex-row md:grid md:grid-cols-1 md:space-x-16 ">
-      <div className=" text-[#524d41] md:space-y-10 relative md:pt-16">
-        <p className=" absolute text-6xl md:text-7xl md:right-0 right-10">
+    <div className=" grid md:grid-cols-1 md:flex md:space-x-16 ">
+      <div className=" text-[#524d41] space-y-6 md:space-y-10 relative md:pt-16 md:text-left text-center">
+        <p className="  text-6xl md:text-7xl ">
           Perfect gifts <br />
           for you
         </p>
@@ -15,11 +15,11 @@ export default function Hero() {
           your favorite person, <br />
           we've got your needs covered.{" "}
         </p>
-        <div className=" md:flex md:gap-4">
-          <div className=" border md:p-2 bg-[#504d43] text-white font-light">
+        <div className=" grid grid-cols-1 gap-4 md:flex md:gap-4 md:mx-0 mx-24">
+          <div className=" p-2 border md:p-2 bg-[#504d43] text-white font-light">
             Get Started Now
           </div>
-          <div className=" md:p-2 md:flex items-center md:space-x-2 ">
+          <div className=" grid grid-cols-2  md:p-2 md:flex items-center md:space-x-2 px-6">
             <div>How it works</div>{" "}
             <div className=" ">
               <MoveUpRight width={15} className=" text-sm " />
