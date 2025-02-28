@@ -4,8 +4,8 @@ import { MoveRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <div className="   md:mx-12 md:py-10 md:space-y-10">
-      <div className=" text-[#524d41] md:grid md:grid-cols-2">
+    <div className=" md:mx-12 md:py-10 md:space-y-10">
+      <div className=" text-[#524d41] grid md:grid-cols-2 grid-cols-1 text-center">
         <div className=" md:space-y-2">
           <p className=" uppercase">Type of Bouquet</p>
           <p className=" md:text-4xl md:font-semibold">
