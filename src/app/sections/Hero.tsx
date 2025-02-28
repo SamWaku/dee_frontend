@@ -40,32 +40,32 @@ export default function Hero() {
           />
         </div>
 
-        <div className=" md:absolute md:mx-0 mx-40 xl:right-60 md:right-32 md:top-60 md:space-y-6">
+        <div className="  md:absolute md:mx-0 mx-16 xl:right-60 md:right-32 md:top-60 space-y-6 ">
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" border bg-white md:p-2 shadow-lg">
+            <div className=" md:mx-0 mx-28 border bg-white p-2 shadow-lg">
               <Flower2 className=" text-[#524d41]" />
             </div>
-            <div>
+            <div className=" md:text-left text-center">
               <div className=" md:text-2xl md:font-light text-black">50+</div>
               <div>Kind of flowers</div>
             </div>
           </div>
 
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" border bg-white md:p-2 shadow-lg">
+            <div className=" md:mx-0 mx-28 border bg-white p-2 shadow-lg">
               <Sparkles className=" text-[#524d41]" />
             </div>
-            <div>
+            <div className=" md:text-left text-center">
               <div className=" md:text-2xl md:font-light text-black">150+</div>
               <div>Unique Styles</div>
             </div>
           </div>
 
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" border bg-white md:p-2 shadow-lg">
+            <div className=" md:mx-0 mx-28 border bg-white p-2 shadow-lg">
               <Star className=" text-[#524d41]" />
             </div>
-            <div>
+            <div className=" md:text-left text-center">
               <div className=" md:text-2xl md:font-light text-black">600+</div>
               <div>Happy Clients</div>
             </div>
