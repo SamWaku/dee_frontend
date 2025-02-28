@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import MobileNavBar from "@/components/MobileNavBar";
+import Image from "next/image";
 
 interface NavigationLayoutProps {
   children: ReactNode;
@@ -32,7 +33,7 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="">
       <nav className="bg-[#f6efe2] text-[#514a3c] md:py-4">
         <div className=" mx-auto flex justify-between items-center md:py-8">
           {/* Mobile Menu Button */}
@@ -54,6 +55,15 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
             ref={mobileMenuRef}
             className="fixed top-12 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg border-t"
           >
+            <div>
+              <Image
+                src="/Logo.png" // Move logo to public folder
+                alt="Logo"
+                width={130}
+                height={100}
+                priority
+              />
+            </div>
             <MobileNavBar />
           </div>
         )}

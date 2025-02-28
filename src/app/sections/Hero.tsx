@@ -4,9 +4,9 @@ import { Flower2, Sparkles, Star, MoveUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className=" flex md:space-x-16 ">
+    <div className=" flex-row md:grid md:grid-cols-1 md:space-x-16 ">
       <div className=" text-[#524d41] md:space-y-10 relative md:pt-16">
-        <p className=" md:text-7xl ">
+        <p className=" absolute text-6xl md:text-7xl md:right-0 right-10">
           Perfect gifts <br />
           for you
         </p>
