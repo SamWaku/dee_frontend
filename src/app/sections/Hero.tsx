@@ -15,11 +15,11 @@ export default function Hero() {
           your favorite person, <br />
           we've got your needs covered.{" "}
         </p>
-        <div className=" grid grid-cols-1 gap-4 md:flex md:gap-4 md:mx-0 mx-24">
+        <div className=" grid grid-cols-1 gap-4 md:flex md:gap-4 ">
           <div className=" p-2 border md:p-2 bg-[#504d43] text-white font-light">
             Get Started Now
           </div>
-          <div className=" grid grid-cols-2  md:p-2 md:flex items-center md:space-x-2 px-6">
+          <div className="md:p-2 flex items-center md:space-x-2 md:pl-0 pl-36">
             <div>How it works</div>{" "}
             <div className=" ">
               <MoveUpRight width={15} className=" text-sm " />
