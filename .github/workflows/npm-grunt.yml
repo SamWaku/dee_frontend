@@ -12,23 +12,24 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+        
       - name: Debug secrets
         run: |
           echo "VPS_HOST: ${{ secrets.VPS_HOST }}"
           echo "VPS_USER: ${{ secrets.VPS_USER }}"
+          echo "VPS_SSH_KEY Length: ${#secrets.VPS_SSH_KEY}"
         shell: bash
 
       - name: Setup SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.VPS_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          if [ -z "${{ secrets.VPS_HOST }}" ]; then
-            echo "Error: VPS_HOST is not set!"
-            exit 1 
-          fi
           ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Test SSH Connection
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "echo 'SSH Connection Successful'"
 
       - name: Pull latest changes on VPS
         run: |
