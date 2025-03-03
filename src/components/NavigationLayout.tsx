@@ -35,17 +35,28 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
   return (
     <div className="">
       <nav className="bg-[#f6efe2] text-[#514a3c] md:py-4">
-        <div className=" mx-auto flex justify-between items-center md:py-8">
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden z-50 text-gray-700 hover:text-gray-900"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-            style={{ fontSize: "24px" }}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+        <div className=" z-50 fixed grid grid-cols-2 md:flex md:justify-between items-center md:py-8">
+          <div className=" md:hidden z-50">
+            <Image
+              src="/Logo.png" // Move logo to public folder
+              alt="Logo"
+              width={130}
+              height={100}
+              priority
+            />
+          </div>
 
+          {/* Mobile Menu Button */}
+          <div>
+            <button
+              className="md:hidden z-50 text-gray-700 hover:text-gray-900"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+              style={{ fontSize: "24px" }}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
           <NavBar />
         </div>
 
@@ -53,17 +64,8 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
         {isOpen && (
           <div
             ref={mobileMenuRef}
-            className="fixed top-12 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg border-t"
+            className="fixed top-20 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg border-t"
           >
-            <div>
-              <Image
-                src="/Logo.png" // Move logo to public folder
-                alt="Logo"
-                width={130}
-                height={100}
-                priority
-              />
-            </div>
             <MobileNavBar />
           </div>
         )}

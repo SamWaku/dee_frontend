@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <div className=" md:mx-12 mx-10 py-10  space-y-10">
+    <div className=" min-h-screen md:mx-12 mx-10 py-10  space-y-10">
       <div className=" text-[#524d41] grid md:grid-cols-2 grid-cols-1 md:text-left text-center">
         <div className=" space-y-6 md:space-y-2">
           <p className=" uppercase md:text-lg text-2xl">Type of Bouquet</p>
