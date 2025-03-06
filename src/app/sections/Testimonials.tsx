@@ -184,7 +184,7 @@ function Testimonials() {
                   <div className="mt-4 flex">
                     {[...Array(5)].map((_, i) => (
                       <svg
-                        key={i}
+                        key={`${testimonial.id}-star-${i}`} // Ensure uniqueness
                         className="w-5 h-5 text-yellow-400 fill-current"
                         viewBox="0 0 24 24"
                       >

@@ -19,12 +19,12 @@ export default function Specials() {
           />
         </div>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-8">
+      <div className=" grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-8 mx-10">
         {/* <div className=" grid grid-cols-1 gap-6 mx-20"></div> */}
         <div className=" md:grid">
           <div className="  ">
             <video
-              className="  md:w-80 h-full rounded-lg"
+              className="  md:w-80 h-96 rounded-lg"
               autoPlay
               muted
 
@@ -37,7 +37,7 @@ export default function Specials() {
         <div className=" ">
           <div className="  ">
             <video
-              className="  md:w-80 h-full rounded-lg"
+              className="  md:w-80 h-96 rounded-lg"
               autoPlay
               muted
 
@@ -49,7 +49,7 @@ export default function Specials() {
         </div>
         <div className="  ">
           <video
-            className=" md:w-80 h-full rounded-lg"
+            className=" md:w-80 h-96 rounded-lg"
             autoPlay
             muted
 
