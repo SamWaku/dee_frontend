@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        "slide-left": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "slide-left-infinite": "slide-left 15s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

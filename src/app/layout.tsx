@@ -9,7 +9,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-[#f6efe2]">
         <NavigationLayout>{children}</NavigationLayout>
       </body>

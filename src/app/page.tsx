@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import Specials from "./sections/Specials";
+import Testimonials from "./sections/Testimonials";
 
 // app/page.tsx
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
         </div>
         <div className="  min-h-screen ">
           <Specials />
+        </div>
+        <div>
+          <Testimonials />
         </div>
         <div>
           <Footer />
