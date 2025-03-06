@@ -1,5 +1,4 @@
 import { Sparkle } from "lucide-react";
-import React, { lazy } from "react";
 
 export default function Specials() {
   return (

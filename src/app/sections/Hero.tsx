@@ -13,7 +13,7 @@ export default function Hero() {
         <p>
           Whether you want to express your appreciation <br /> or send them to
           your favorite person, <br />
-          we've got your needs covered.{" "}
+          we&apos;ve got your needs covered.{" "}
         </p>
         <div className=" grid grid-cols-1 gap-4 md:flex md:gap-4 ">
           <div className=" p-2 border md:p-2 bg-[#504d43] text-white font-light md:mx-0 mx-24">

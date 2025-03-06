@@ -44,44 +44,44 @@ function Testimonials() {
   ];
 
   // Second row of testimonials (different people)
-  const testimonials2 = [
-    {
-      id: 5,
-      name: "Olivia Martinez",
-      role: "3-Year Member",
-      image: "/api/placeholder/80/80",
-      quote:
-        "The customer service here is unmatched. They always go above and beyond to help me.",
-      rotation: "rotate-1",
-    },
-    {
-      id: 6,
-      name: "James Wilson",
-      role: "Gift Shopper",
-      image: "/api/placeholder/80/80",
-      quote:
-        "I always find the perfect gifts here. Everyone loves what I pick out from this shop!",
-      rotation: "-rotate-2",
-    },
-    {
-      id: 7,
-      name: "Sophia Lee",
-      role: "Weekly Visitor",
-      image: "/api/placeholder/80/80",
-      quote:
-        "I look forward to seeing what's new every week. There's always something exciting to discover.",
-      rotation: "rotate-2",
-    },
-    {
-      id: 8,
-      name: "Daniel Brown",
-      role: "Satisfied Customer",
-      image: "/api/placeholder/80/80",
-      quote:
-        "The quality-to-price ratio is excellent. I always feel like I'm getting great value here.",
-      rotation: "-rotate-1",
-    },
-  ];
+  //   const testimonials2 = [
+  //     {
+  //       id: 5,
+  //       name: "Olivia Martinez",
+  //       role: "3-Year Member",
+  //       image: "/api/placeholder/80/80",
+  //       quote:
+  //         "The customer service here is unmatched. They always go above and beyond to help me.",
+  //       rotation: "rotate-1",
+  //     },
+  //     {
+  //       id: 6,
+  //       name: "James Wilson",
+  //       role: "Gift Shopper",
+  //       image: "/api/placeholder/80/80",
+  //       quote:
+  //         "I always find the perfect gifts here. Everyone loves what I pick out from this shop!",
+  //       rotation: "-rotate-2",
+  //     },
+  //     {
+  //       id: 7,
+  //       name: "Sophia Lee",
+  //       role: "Weekly Visitor",
+  //       image: "/api/placeholder/80/80",
+  //       quote:
+  //         "I look forward to seeing what's new every week. There's always something exciting to discover.",
+  //       rotation: "rotate-2",
+  //     },
+  //     {
+  //       id: 8,
+  //       name: "Daniel Brown",
+  //       role: "Satisfied Customer",
+  //       image: "/api/placeholder/80/80",
+  //       quote:
+  //         "The quality-to-price ratio is excellent. I always feel like I'm getting great value here.",
+  //       rotation: "-rotate-1",
+  //     },
+  //   ];
 
   return (
     <div className="py-10 bg-white relative overflow-hidden">
@@ -95,8 +95,8 @@ function Testimonials() {
             Happy Clients
           </h2>
           <p className="text-center text-lg font-light text-[#524d41] max-w-xl mx-auto">
-            Here's what our dearest clients have to say about their experience
-            with us
+            Here&apos;s what our dearest clients have to say about their
+            experience with us
           </p>
         </div>
 
