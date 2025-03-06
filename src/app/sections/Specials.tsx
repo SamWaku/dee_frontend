@@ -7,7 +7,7 @@ export default function Specials() {
       <div className=" md:mx-[30rem] mx-[6rem] md:relative md:flex md:items-center text-center text-[#524d41] md:text-4xl lg:text-4xl uppercase md:font-semibold lg:font-semibold">
         <div className=" ">
           <Sparkle
-            className=" items-end -rotate-45 md:absolute md:top-8 md:-left-3 left-60 -bottom-10 pr-0"
+            className=" items-end -rotate-45 absolute md:top-8 md:-left-3 left-60 top-10 pr-0"
             width={15}
           />
         </div>
@@ -19,12 +19,12 @@ export default function Specials() {
           />
         </div>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-3 md:gap-10">
+      <div className=" grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-8">
         {/* <div className=" grid grid-cols-1 gap-6 mx-20"></div> */}
         <div className=" md:grid">
           <div className="  ">
             <video
-              className="  w-full h-full rounded-lg"
+              className="  md:w-80 h-full rounded-lg"
               autoPlay
               muted
 
@@ -34,10 +34,10 @@ export default function Specials() {
             </video>
           </div>
         </div>
-        <div className=" grid grid-cols-1 gap-6 md:w-80">
+        <div className=" ">
           <div className="  ">
             <video
-              className="  w-full h-full rounded-smlg"
+              className="  md:w-80 h-full rounded-lg"
               autoPlay
               muted
 
@@ -49,7 +49,7 @@ export default function Specials() {
         </div>
         <div className="  ">
           <video
-            className=" w-full h-full rounded-lg"
+            className=" md:w-80 h-full rounded-lg"
             autoPlay
             muted
 
