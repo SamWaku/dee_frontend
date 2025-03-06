@@ -6,14 +6,14 @@ import { SearchInput } from "@/atoms/SearchInput";
 
 const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between gap-40 bg-[#f6efe2] px-4 md:px-10 py-0 w-full">
+    <nav className="flex items-center justify-between xl:gap-40 md:gap-32 bg-[#f6efe2] px-4 md:px-10 py-0 w-full">
       {/* Logo */}
       <div className="flex-shrink-0 mr-8">
         <Image src="/Logo.png" alt="Logo" width={130} height={40} priority />
       </div>
 
       {/* Desktop Menu - changed to max-w-xl to prevent overcrowding */}
-      <div className="flex-1 max-w-xl flex justify-between space-x-20">
+      <div className="flex-1 max-w-xl flex justify-between xl:space-x-20 md:space-x-12">
         <Link href="/" className="hover:underline whitespace-nowrap">
           Home
         </Link>
