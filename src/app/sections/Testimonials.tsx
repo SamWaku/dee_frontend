@@ -172,15 +172,15 @@ function Testimonials() {
                       </p>
                     </div>
                   </div>
-                  <p className="text-[#524d41] italic text-sm">
-                    {testimonial.quote.split(".").map((sentence, index) =>
-                      sentence.trim() ? (
-                        <p key={index} className="block">
-                          {sentence}.
-                        </p>
-                      ) : null
-                    )}
+                  <p className="text-[#524d41] italic text-sm leading-6">
+                    {testimonial.quote.split(" ").map((word, index) => (
+                      <>
+                        {word} {(index + 1) % 5 === 0 && <br />}{" "}
+                        {/* Insert line break every 5 words */}
+                      </>
+                    ))}
                   </p>
+
                   <div className="mt-4 flex">
                     {[...Array(5)].map((_, i) => (
                       <svg
