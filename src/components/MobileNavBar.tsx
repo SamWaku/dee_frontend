@@ -6,7 +6,7 @@ import React from "react";
 
 export default function MobileNavBar() {
   return (
-    <div className="fixed flex flex-col w-full bg-[#f6efe2] shadow-lg border-t p-4">
+    <div className="fixed flex flex-col h-72 w-full bg-[#f6efe2] shadow-lg border-t p-4">
       <div>
         {" "}
         <Link
