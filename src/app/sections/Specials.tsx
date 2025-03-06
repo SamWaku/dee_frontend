@@ -13,22 +13,79 @@ export default function Specials() {
         </div>
         <div className=" font-mono text-xl">Specials</div>
         <div>
-          <Sparkle className=" md:absolute md:bottom-7" width={12} />
+          <Sparkle
+            className=" absolute md:bottom-7 md:left-0 right-60"
+            width={12}
+          />
         </div>
       </div>
-      <div className=" grid grid-cols-1 md:grid-cols-3 md: gap-10">
-        <div className=" grid grid-cols-1 gap-6">
-          <div className="  rounded-r-full bg-white md:h-40 h-60"></div>
-          <div className="  rounded-l-full bg-white md:h-40 h-60"></div>
-        </div>
+      <div className=" grid grid-cols-1 md:grid-cols-3 md:gap-10">
+        {/* <div className=" grid grid-cols-1 gap-6 mx-20"></div> */}
         <div className=" md:grid">
-          <div className="  bg-white rounded-t-full md:h-full h-60"></div>
+          <div className="  ">
+            <video
+              className="  w-full h-full rounded-lg"
+              autoPlay
+              muted
+
+              // poster="/images/video-thumbnail.jpg"
+            >
+              <source src="/videos/video3.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
         <div className=" grid grid-cols-1 gap-6 md:w-80">
-          <div className="  rounded-l-full bg-white md:h-40 h-60"></div>
-          <div className="  rounded-r-full bg-white md:h-40 h-60"></div>
+          <div className="  ">
+            <video
+              className="  w-full h-full rounded-smlg"
+              autoPlay
+              muted
+
+              // poster="/images/video-thumbnail.jpg"
+            >
+              <source src="/videos/video4.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className="  ">
+          <video
+            className=" w-full h-full rounded-lg"
+            autoPlay
+            muted
+
+            // poster="/images/video-thumbnail.jpg"
+          >
+            <source src="/videos/video5.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
   );
+}
+
+{
+  /* <div className=" ">
+            <video
+              className=" bg-white w-80 h-full rounded-t-full"
+              autoPlay
+              muted
+
+              // poster="/images/video-thumbnail.jpg"
+            >
+              <source src="/videos/video1.mp4" type="video/mp4" />
+            </video>
+          </div> */
+}
+{
+  /* <div className="  0">
+            <video
+              className=" bg-white w-full h-full rounded-t-full"
+              autoPlay
+              muted
+
+              // poster="/images/video-thumbnail.jpg"
+            >
+              <source src="/videos/video2.mp4" type="video/mp4" />
+            </video>
+          </div> */
 }
