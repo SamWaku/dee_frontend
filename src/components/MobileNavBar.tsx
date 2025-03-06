@@ -8,9 +8,9 @@ export default function MobileNavBar() {
     <div className="fixed flex flex-col w-full bg-[#f6efe2] shadow-lg border-t">
       <Link
         href="/"
-        className="block p-4 text-[#514a3c] hover:bg-[#514a3c] hover:text-[#f6efe2] transition-colors"
+        className="block p-4 text-[#514a3c] hover:bg-[#514a3c] hover:text-[#ba4040] transition-colors"
       >
-        Home
+        Home2
       </Link>
       <Link
         href="/about"
