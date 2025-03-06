@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-600 w-full py-10 md:pb-4 pb-48 min-h-[160px] text-white flex items-center justify-center">
+    <footer className="bg-[#504d43] w-full py-10 md:pb-4 pb-48 min-h-[160px] text-white flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-6 md:mb-0 md:text-left text-center">
@@ -40,9 +40,9 @@ export default function Footer() {
             <div>
               <div className="map-container overflow-hidden rounded-md lg:w-full w-62">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1401.669469677897!2d28.338639228079625!3d-15.421418962797786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI1JzE2LjkiUyAyOMKwMjAnMjIuNyJF!5e0!3m2!1sen!2szm!4v1702801479368!5m2!1sen!2szm"
+                  src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5943.625269605156!2d28.32324839321814!3d-15.391784545170013!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDI1JzE2LjkiUyAyOMKwMjAnMjIuNyJF!5e0!3m2!1sen!2szm!4v1741270257625!5m2!1sen!2szm"
                   width="600"
-                  height="250"
+                  height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
