@@ -33,14 +33,14 @@ export default function Hero() {
           <Image
             className=" rounded-t-full"
             src="/assets/Hero.jpg" // Move logo to public folder
-            alt="Logo"
+            alt="Image1"
             width={420}
             height={40}
             priority
           />
         </div>
 
-        <div className="  md:absolute md:mx-0 mx-16 xl:right-60 md:right-32 md:top-60 space-y-6 ">
+        <div className=" md:pt-0 pt-8  md:absolute md:mx-0 mx-16 xl:right-60 md:right-32 md:top-60 space-y-6 ">
           <div className=" md:flex md:gap-2 text-left items-center">
             {/* Flower icon - hidden on small/medium screens, visible on large */}
             <div className="hidden lg:block border bg-white p-2 shadow-lg">
