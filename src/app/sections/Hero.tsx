@@ -47,7 +47,7 @@ export default function Hero() {
               <Flower2 className="text-[#524d41]" />
             </div>
             {/* Flower icon - visible only on small screens */}
-            <div className=" mx-24 block md:hidden lg:hidden border bg-white p-2 shadow-lg">
+            <div className=" mx-24 block md:hidden lg:hidden border bg-white p-3 shadow-lg">
               <Flower2 width={40} height={40} className="text-[#524d41]" />
             </div>
             <div className=" md:text-left text-center">
@@ -57,8 +57,15 @@ export default function Hero() {
           </div>
 
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" md:mx-0 mx-24 border bg-white p-2 shadow-lg">
+            <div className="hidden lg:block border bg-white p-2 shadow-lg">
               <Sparkles className=" font-semibold text-[#524d41]" />
+            </div>
+            <div className=" mx-24 block md:hidden lg:hidden border bg-white p-3 shadow-lg">
+              <Sparkles
+                width={40}
+                height={40}
+                className=" font-semibold text-[#524d41]"
+              />
             </div>
             <div className=" md:text-left text-center">
               <div className=" md:text-2xl md:font-light text-black">150+</div>
@@ -67,8 +74,11 @@ export default function Hero() {
           </div>
 
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" md:mx-0 mx-28 border bg-white p-2 shadow-lg">
+            <div className="hidden lg:block border bg-white p-2 shadow-lg">
               <Star className=" text-[#524d41]" />
+            </div>
+            <div className=" mx-24 block md:hidden lg:hidden border bg-white p-3 shadow-lg">
+              <Star width={40} height={40} className=" text-[#524d41]" />
             </div>
             <div className=" md:text-left text-center">
               <div className=" md:text-2xl md:font-light text-black">600+</div>
