@@ -42,15 +42,13 @@ export default function Hero() {
 
         <div className="  md:absolute md:mx-0 mx-16 xl:right-60 md:right-32 md:top-60 space-y-6 ">
           <div className=" md:flex md:gap-2 text-left items-center">
-            <div className=" md:hidden md:mx-0 mx-24 border bg-white p-2 pl-3 shadow-lg">
-              <Flower2
-                width={40}
-                height={40}
-                className=" font-light text-[#524d41]"
-              />
+            {/* Flower icon - hidden on small/medium screens, visible on large */}
+            <div className="hidden lg:block border bg-white p-2 shadow-lg">
+              <Flower2 className="text-[#524d41]" />
             </div>
-            <div className=" sm:hidden  display md:mx-0 mx-24 border bg-white p-2 pl-3 shadow-lg">
-              <Flower2 className=" font-light text-[#524d41]" />
+            {/* Flower icon - visible only on small screens */}
+            <div className=" mx-24 block md:hidden lg:hidden border bg-white p-2 shadow-lg">
+              <Flower2 width={40} height={40} className="text-[#524d41]" />
             </div>
             <div className=" md:text-left text-center">
               <div className=" text-2xl font-light text-black">50+</div>
