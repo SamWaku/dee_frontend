@@ -29,7 +29,7 @@ export default function MobileNavBar() {
         </Link>
       </div>
       {/* Search Input */}
-      <div className="">
+      <div className=" mr-24">
         <SearchInput />
       </div>
     </div>

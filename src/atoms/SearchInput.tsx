@@ -25,23 +25,23 @@ export const SearchInput = () => {
   };
 
   return (
-    <div className="absolute md:right-10 bg-white shadow-md lg:rounded-lg p-4">
+    <div className="relative bg-white shadow-md rounded-lg p-4">
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className=" flex items-center gap-3 border-2 border-gray-300 px-4 rounded-full"
+        className="flex items-center gap-3 border-2 border-gray-300 px-3 py-1 rounded-full"
       >
-        <Search className="text-[#514a3c]" size={22} />
+        <Search className="text-[#514a3c]" size={20} />
         <input
           type="text"
           placeholder="Search..."
           value={inputValue}
           onChange={handleChange}
           onKeyDown={handleKeyPress}
-          className="w-full bg-white outline-none text-gray-800 "
+          className="w-32 bg-white outline-none text-gray-800"
         />
-        <ShoppingBag className="text-[#514a3c]" size={22} />
+        <ShoppingBag className="text-[#514a3c]" size={20} />
       </motion.div>
     </div>
   );

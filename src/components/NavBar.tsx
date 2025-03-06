@@ -6,31 +6,33 @@ import { SearchInput } from "@/atoms/SearchInput";
 
 const NavBar = () => {
   return (
-    <nav className="flex w-full justify-between items-center bg-[#f6efe2] px-6 md:px-12">
+    <nav className="flex items-center justify-between gap-44 bg-[#f6efe2] px-4 md:px-10 py-0 w-full">
       {/* Logo */}
-      <Image src="/Logo.png" alt="Logo" width={130} height={40} priority />
+      <div className="flex-shrink-0 mr-8">
+        <Image src="/Logo.png" alt="Logo" width={130} height={40} priority />
+      </div>
 
-      {/* Desktop Menu */}
-      <div className="hidden md:flex gap-10 items-center">
-        <Link href="/" className="hover:underline">
+      {/* Desktop Menu - changed to max-w-xl to prevent overcrowding */}
+      <div className="flex-1 max-w-xl flex justify-between space-x-10">
+        <Link href="/" className="hover:underline whitespace-nowrap">
           Home
         </Link>
-        <Link href="/about" className="hover:underline">
+        <Link href="/about" className="hover:underline whitespace-nowrap">
           Service
         </Link>
-        <Link href="/contact" className="hover:underline">
+        <Link href="/contact" className="hover:underline whitespace-nowrap">
           Ready to shop
         </Link>
-        <Link href="/contact" className="hover:underline">
+        <Link href="/contact" className="hover:underline whitespace-nowrap">
           Pricing
         </Link>
-        <Link href="/contact" className="hover:underline">
+        <Link href="/contact" className="hover:underline whitespace-nowrap">
           About Us
         </Link>
       </div>
 
-      {/* Search Input */}
-      <div className="hidden md:block">
+      {/* Search Input - added ml-auto to push it to the right */}
+      <div className="hidden md:block ml-8">
         <SearchInput />
       </div>
     </nav>
