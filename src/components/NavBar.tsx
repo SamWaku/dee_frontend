@@ -18,7 +18,7 @@ const NavBar = () => {
           Home
         </Link>
         <Link href="/about" className="hover:underline whitespace-nowrap">
-          Service
+          service
         </Link>
         <Link href="/contact" className="hover:underline whitespace-nowrap">
           Ready to shop
