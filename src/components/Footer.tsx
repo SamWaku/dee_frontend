@@ -4,8 +4,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-600 w-full py-10 text-white">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-600 w-full py-10 min-h-[160px] text-white flex items-center justify-center">
+      <div className="container mx-auto px-4 text-center">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Company Name</h3>

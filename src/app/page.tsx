@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import Specials from "./sections/Specials";
@@ -16,6 +17,9 @@ export default function Home() {
         </div>
         <div className="  min-h-screen ">
           <Specials />
+        </div>
+        <div>
+          <Footer />
         </div>
       </main>{" "}
     </div>
