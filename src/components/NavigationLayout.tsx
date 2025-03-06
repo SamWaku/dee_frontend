@@ -32,7 +32,7 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <nav className="bg-[#f6efe2] text-[#514a3c] relative">
         <div className="z-50 fixed top-0 left-0 right-0 flex justify-between items-center py-4 px-6 bg-[#f6efe2] shadow-md">
           {/* Logo */}
@@ -65,14 +65,15 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
         {isOpen && (
           <div
             ref={mobileMenuRef}
-            className=" absolute top-20 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg"
+            className="absolute top-20 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg"
           >
             <MobileNavBar />
           </div>
         )}
       </nav>
 
-      <main className="py-8">{children}</main>
+      {/* Added pt-20 to account for fixed navbar */}
+      <main className="flex-grow pt-20">{children}</main>
     </div>
   );
 }

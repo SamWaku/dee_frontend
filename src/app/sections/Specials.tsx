@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Specials() {
   return (
-    <div className=" min-h-screen md:mx-12 mx-10 py-10 space-y-10">
+    <div className=" min-h-40 md:mx-12 mx-10 py-10 space-y-10">
       <div className=" md:mx-[30rem] mx-[6rem] md:relative md:flex md:items-center text-center text-[#524d41] md:text-4xl lg:text-4xl uppercase md:font-semibold lg:font-semibold">
         <div className=" ">
           <Sparkle

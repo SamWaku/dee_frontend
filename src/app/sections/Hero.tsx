@@ -4,7 +4,7 @@ import { Flower2, Sparkles, Star, MoveUpRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className=" pt-20 grid md:grid-cols-1 md:flex md:space-x-16 md:space-y-0 space-y-4">
+    <div className=" md:pt-20 pt-12 grid md:grid-cols-1 md:flex md:space-x-16 md:space-y-0 space-y-4">
       <div className=" text-[#524d41] space-y-6 md:space-y-10 relative md:pt-16 md:text-left text-center">
         <p className="  text-6xl md:text-7xl ">
           Perfect gifts <br />
