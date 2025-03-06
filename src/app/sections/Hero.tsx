@@ -68,12 +68,12 @@ export default function Hero() {
               />
             </div>
             <div className=" md:text-left text-center">
-              <div className=" md:text-2xl md:font-light text-black">150+</div>
+              <div className=" text-2xl font-light text-black">150+</div>
               <div>Unique Styles</div>
             </div>
           </div>
 
-          <div className=" md:flex md:gap-2 text-left items-center">
+          <div className=" grid grid-cols-1  md:flex gap-2 text-left items-center">
             <div className="hidden lg:block border bg-white p-2 shadow-lg">
               <Star className=" text-[#524d41]" />
             </div>
@@ -81,7 +81,7 @@ export default function Hero() {
               <Star width={40} height={40} className=" text-[#524d41]" />
             </div>
             <div className=" md:text-left text-center">
-              <div className=" md:text-2xl md:font-light text-black">600+</div>
+              <div className=" text-2xl font-light text-black">600+</div>
               <div>Happy Clients</div>
             </div>
           </div>
