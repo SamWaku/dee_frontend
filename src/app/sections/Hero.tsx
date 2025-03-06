@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <div className=" grid grid-cols-1 gap-4 md:flex md:gap-4 ">
           <div className=" p-2 border md:p-2 bg-[#504d43] text-white font-light md:mx-0 mx-24">
-            Get Started Now
+            Get Yours Now
           </div>
           <div className="md:p-2 flex items-center md:space-x-2 md:pl-0 pl-36">
             <div>How it works</div>{" "}
