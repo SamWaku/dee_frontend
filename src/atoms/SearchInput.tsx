@@ -25,7 +25,7 @@ export const SearchInput = () => {
   };
 
   return (
-    <div className="absolute right-10 bg-white shadow-md lg:rounded-lg p-4">
+    <div className="absolute md:right-10 bg-white shadow-md lg:rounded-lg p-4">
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}

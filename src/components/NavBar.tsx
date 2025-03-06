@@ -2,51 +2,38 @@
 
 import Link from "next/link";
 import Image from "next/image";
-
 import { SearchInput } from "@/atoms/SearchInput";
-
-type NavBarProps = {
-  name: string | null; // Define the type for the name prop
-};
 
 const NavBar = () => {
   return (
-    <div className="xl:px-10 lg:px-10 fixed w-full bg-[#f6efe2]   justify-between z-10">
-      <nav className="flex w-full py-10 justify-between">
-        {/* Desktop Menu */}
-        <div className="text-[#514a3c] hidden md:flex xl:space-x-60 lg:space-x-40 items-center">
-          <div>
-            <Image
-              src="/Logo.png" // Move logo to public folder
-              alt="Logo"
-              width={130}
-              height={40}
-              priority
-            />
-          </div>
-          <div className=" md:flex lg:gap-12 md:gap-12 md:pt-6">
-            <Link href="/" className="hover:underline">
-              Home
-            </Link>
-            <Link href="/about" className="hover:underline">
-              Service
-            </Link>
-            <Link href="/contact" className="hover:underline">
-              Ready to shop
-            </Link>
-            <Link href="/contact" className="hover:underline">
-              Pricing
-            </Link>
-            <Link href="/contact" className="hover:underline">
-              About Us
-            </Link>
-          </div>
-          <div className="">
-            <SearchInput />
-          </div>
-        </div>
-      </nav>
-    </div>
+    <nav className="flex w-full justify-between items-center bg-[#f6efe2] px-6 md:px-12">
+      {/* Logo */}
+      <Image src="/Logo.png" alt="Logo" width={130} height={40} priority />
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex gap-10 items-center">
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
+        <Link href="/about" className="hover:underline">
+          Service
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          Ready to shop
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          Pricing
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          About Us
+        </Link>
+      </div>
+
+      {/* Search Input */}
+      <div className="hidden md:block">
+        <SearchInput />
+      </div>
+    </nav>
   );
 };
 

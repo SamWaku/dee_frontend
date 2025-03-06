@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="">
       <main>
-        <div className=" flex-1  mx-auto xl:container md:mx-12 pb-20">
+        <div className="mx-auto xl:container md:mx-12 pb-20">
           <Hero />
         </div>
 

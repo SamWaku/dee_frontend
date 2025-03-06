@@ -3,7 +3,6 @@
 import { ReactNode, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import MobileNavBar from "@/components/MobileNavBar";
 
@@ -34,15 +33,15 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
 
   return (
     <div>
-      <nav className="bg-[#f6efe2] text-[#514a3c] md:py-4 relative">
-        <div className="z-50 fixed top-0 left-0 right-0 flex justify-between items-center md:py-0 py-4 px-6 md:px-12 bg-[#f6efe2] shadow-md">
+      <nav className="bg-[#f6efe2] text-[#514a3c] relative">
+        <div className="z-50 fixed top-0 left-0 right-0 flex justify-between items-center py-4 px-6 bg-[#f6efe2] shadow-md">
           {/* Logo */}
           <div className="md:hidden">
             <Image
               src="/Logo.png"
               alt="Logo"
               width={100}
-              height={100}
+              height={40}
               priority
             />
           </div>
@@ -62,15 +61,13 @@ export default function NavigationLayout({ children }: NavigationLayoutProps) {
           </div>
         </div>
 
-        {/* Mobile Menu - Positioned correctly with full width */}
+        {/* Mobile Menu */}
         {isOpen && (
           <div
             ref={mobileMenuRef}
-            className="  fixed top-16 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg border-t p-4"
+            className=" absolute top-20 left-0 right-0 z-50 bg-[#f6efe2] shadow-lg"
           >
-            <div className=" ">
-              <MobileNavBar />
-            </div>
+            <MobileNavBar />
           </div>
         )}
       </nav>
