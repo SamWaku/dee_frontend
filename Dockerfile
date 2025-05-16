@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # Fetching the latest nginx image
-FROM nginx:stable as runtime
+FROM nginx:stable AS runtime
 
 # Copying built assets from builder
 COPY --from=builder /app/dist /usr/share/nginx/html
