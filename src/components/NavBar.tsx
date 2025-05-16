@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SearchInput } from "@/atoms/SearchInput";
+import { Suspense } from "react";
 
 const NavBar = () => {
   return (
@@ -33,7 +34,9 @@ const NavBar = () => {
 
       {/* Search Input - added ml-auto to push it to the right */}
       <div className="hidden md:block ">
-        <SearchInput />
+        <Suspense>
+          <SearchInput />
+        </Suspense>
       </div>
     </nav>
   );
