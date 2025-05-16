@@ -1,18 +1,18 @@
-import { Api } from "@/api/ApiSlice";
-import build from "next/dist/build";
+// import { Api } from "@/api/ApiSlice";
+// import build from "next/dist/build";
 
-export interface Products
-{
-    id: number
-    productname: string;
-}
+// export interface Products
+// {
+//     id: number
+//     productname: string;
+// }
 
-const ProductsQuery = Api.injectEndpoints({
-    endpoints(builder) => ({
-        getProduct: builder.query<Products[], void>({
-            query:() => 'dee/products'
-        })
-    })
-});
+// const ProductsQuery = Api.injectEndpoints({
+//     endpoints(builder) => ({
+//         getProduct: builder.query<Products[], void>({
+//             query:() => 'dee/products'
+//         })
+//     })
+// });
 
-export const {} = ProductsQuery;
+// export const {} = ProductsQuery;
