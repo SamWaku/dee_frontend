@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ChangeEvent, KeyboardEvent } from "react";
+import { useState, ChangeEvent, KeyboardEvent, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Search, ShoppingBag } from "lucide-react";
@@ -33,14 +33,16 @@ export const SearchInput = () => {
         className="flex items-center gap-3 border-2 border-gray-300 px-3 py-1 rounded-full"
       >
         <Search className="text-[#514a3c]" size={20} />
-        <input
-          type="text"
-          placeholder="Search..."
-          value={inputValue}
-          onChange={handleChange}
-          onKeyDown={handleKeyPress}
-          className="w-32 bg-white outline-none text-gray-800"
-        />
+        <Suspense>
+          <input
+            type="text"
+            placeholder="Search..."
+            value={inputValue}
+            onChange={handleChange}
+            onKeyDown={handleKeyPress}
+            className="w-32 bg-white outline-none text-gray-800"
+          />
+        </Suspense>
         <ShoppingBag className="text-[#514a3c]" size={20} />
       </motion.div>
     </div>
