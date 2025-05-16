@@ -1,0 +1,31 @@
+name: Deelicious deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  buil-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@4
+
+    - name: Setu up Node.js
+      uses: actions/setup-node@4
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React App
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
