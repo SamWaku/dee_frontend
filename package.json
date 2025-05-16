@@ -2,6 +2,7 @@
   "name": "dee_frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://SamWaku.github.io/dee_frontend",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
